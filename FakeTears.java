@@ -12,6 +12,6 @@ public class FakeTears extends StatusMove{
     }
 
     @Override public String describe() {
-        return "использует FakeTears, уменьшает Special Defense оппоненту на 2";
+        return "использует FakeTears";
     }
 }

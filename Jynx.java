@@ -1,9 +1,6 @@
 package pokemon;
 
 import ru.ifmo.se.pokemon.*;
-import move.physical.IcePunch;
-import move.status.FakeTears;
-import move.physical.HeartStamp;
 import move.physical.DoubleSlap;
 
 public class Jynx extends Smoochum {

@@ -1,7 +1,6 @@
 package move.status;
 
 import ru.ifmo.se.pokemon.*;
-import pokemon.*;
 
 public class Agility extends StatusMove {
 
