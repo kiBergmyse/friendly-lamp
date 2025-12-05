@@ -13,6 +13,6 @@ public class Agility extends StatusMove {
     }
 
     @Override public String describe() {
-        return "повышает скорость покемона на два этапа";
+        return "использует Agility";
     }
 }

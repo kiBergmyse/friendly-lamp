@@ -6,7 +6,7 @@ import move.special.DreamEater;
 import move.status.Agility;
 import move.physical.Crunch;
 
-public class Girafarig extends Pokemon {
+public final class Girafarig extends Pokemon {
     public Girafarig(String name, int level) {
         super(name, level);
         setType(Type.PSYCHIC);

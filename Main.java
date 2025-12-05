@@ -5,7 +5,7 @@ import pokemon.*;
 import move.physical.*;
 import move.status.*;
 
-public class Main {
+public final class Main {
     public static void main(String[] args) {
         Battle b = new Battle();
 

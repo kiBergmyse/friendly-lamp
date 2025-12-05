@@ -10,18 +10,14 @@ public class DreamEater extends SpecialMove {
 
     private boolean sleep = false;
 
-    @Override public void applyOppEffects(Pokemon p) {
-        if (p.getCondition() == Status.SLEEP) {
-            sleep = true;
-        } else {
-            sleep = false;
-        }
+    protected void applyOppDamage(Pokemon p, double damage) {
+        sleep = (p.getCondition() == Status.SLEEP);
+        p.setMod(Stat.HP, (int) Math.round(damage));
     }
 
-    @Override
-    protected void applySelfEffects(Pokemon p) {
-        if (p.getCondition() == Status.SLEEP) {
-            p.setMod(Stat.HP, (int) 50.0);
+    @Override protected void applySelfDamage(Pokemon p, double damage){
+        if (sleep) {
+            p.setMod(Stat.HP, (int) - Math.round(damage / 2));
         }
     }
 

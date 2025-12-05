@@ -3,7 +3,7 @@ package pokemon;
 import move.status.Confide;
 import ru.ifmo.se.pokemon.*;
 
-public class Politoed extends Poliwag{
+public final class Politoed extends Poliwhirl{
     public Politoed(String name, int level) {
         super(name, level);
         setType(Type.WATER);

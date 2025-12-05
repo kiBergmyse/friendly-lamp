@@ -9,14 +9,16 @@ public class Rest extends StatusMove {
     }
 
     @Override
-    protected void applySelfEffects(Pokemon pokemon) {
-        pokemon.setMod(Stat.HP, (int) (pokemon.getHP() - pokemon.getStat(Stat.HP)));
-        pokemon.addEffect(new Effect().condition(Status.SLEEP).turns(2)
-        );
+    protected void applySelfEffects(Pokemon p) {
+            System.out.println(p.getHP());
+        p.setMod(Stat.HP, (int) - (p.getStat(Stat.HP) - p.getHP()));
+        p.addEffect(new Effect().condition(Status.SLEEP).turns(2));
+            System.out.println(p.getHP());
+
     }
 
     @Override
     protected String describe() {
-        return "использует Rest, восстанавливает все HP и засыпает";
+        return "использует Rest";
     }
 }

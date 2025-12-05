@@ -3,7 +3,7 @@ package pokemon;
 import ru.ifmo.se.pokemon.*;
 import move.physical.DoubleSlap;
 
-public class Jynx extends Smoochum {
+public final class Jynx extends Smoochum {
     public Jynx(String name, int level) {
         super(name, level);
         setType(Type.PSYCHIC, Type.ICE);
